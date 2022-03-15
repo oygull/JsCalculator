@@ -5,16 +5,82 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Calculator</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   
- </div>
+<div class="calculator">
+  <div class="calculator__header">
+    <p id="output" class="output">
+    </p>
+  </div>
+  <div class="calculator__inner">
+    <div class="first-row">
+      <button value="7" id="sevenNum" class="num">7</button>
+      <button value="8" id="eightNum" class="num">8</button>
+      <button value="9" id="nineNum" class="num">9</button>
+      <button id="deleteAll" class="num">AC</button>
+    </div>
+    <div class="first-row">
+      <button value="4" id="fourNum" class="num">4</button>
+      <button value="5" id="fifeNum" class="num">5</button>
+      <button value="6" id="sixNum"  class="num">6</button>
+      <button id="addBtn" class="num add-btn"><i class='bx bx-chevron-left'></i></button>
+    </div>
+    <div class="main-row">
+      <div class="second-row">
+        <div class="inner-row">
+              <button value="1" id="oneNum" class="num2">1</button>
+              <button value="2" id="twoNum" class="num2">2</button>
+              <button value="3" id="threeNum" class="num2">3</button>
+        </div>
+        <div class="inner-row">
+          <button id="deleteOne" class="num2"><i class='bx bxs-tag-x' ></i></button>
+          <button value="0" id="zeroNum" class="num2">0</button>
+          <button id="dot" value="." class="num2">.</button>
+         </div>
+      </div>
+      <div class="plus-row">
+        <button id="result" class="plus">=</button>
+      </div>
+    </div>
+    <div class="last-row">
+      <button value="/" id="devide" class="digits">÷</button>
+      <button value="*" id="multiply" class="digits">x</button>
+      <button value="-" id="minus" class="digits">-</button>
+      <button value="+" id="plus" class="digits">+</button>
+    </div>
+    <div id="components" class="components">
+      <div class="components-row">
+        <button id="sin" class="dig">sin</button>
+        <button id="cos" class="dig">cos</button>
+        <button id="tan" class="dig">tan</button>
+      </div>
+      <div class="components-row">
+        <button id="factorial" class="dig">x!</button>
+        <button id="pi" value="3.14159" class="dig">&#960</button>
+        <button id="log" class="dig">log</button>
+      </div>
+      <div class="components-row">
+        <button value="(" id="bracket1" class="dig">(</button>
+        <button value=")" id="bracket2" class="dig">)</button>
+        <button id="root" class="dig">√</button>
+      </div>
+      <div class="components-row">
+        <button value="2.7182" id="eNum" class="dig">e</button>
+        <button  id="percent" class="dig">%</button>
+        <button id="power" class="dig">x <sup>2</sup></button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
   <script src="js/main.js">
