@@ -107,7 +107,7 @@ elDeleteOne.addEventListener("click", ()=>{
   else if(elOutput.innerHTML<1){
     elOutput.innerHTML= "";
   }
-  else{
+  else if(elOutput.innerHTML>1){
     elOutput.innerHTML = (elOutput.innerHTML-num)/10;
   }
 })
