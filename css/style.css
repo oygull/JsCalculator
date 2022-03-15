@@ -26,7 +26,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0
 .calculator__header{
   width: 100%;
   height: 150px;
-  background: linear-gradient(90deg, rgba(0,187,80,0.8646052170868348) 25%, rgba(0,187,80,1) 73%);
+  background: linear-gradient(90deg, #00bb50dd 25%, rgba(0,187,80,1) 73%);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -45,6 +45,9 @@ font-size: 22px;
   cursor: pointer;
   border: none;
 }
+.num:active{
+  background-color: #00bb5186;
+}
 .num2{
   flex-grow: 1;
   height: 70px;
@@ -52,6 +55,9 @@ font-size: 22px;
 font-size: 22px;
   cursor: pointer;
   border: none;
+}
+.num2:active{
+  background-color: #00bb5186;
 }
 .main-row{
   width: 100%;
@@ -84,6 +90,9 @@ font-size: 22px;
   border-radius: 50px;
   cursor: pointer;
 }
+.plus:active{
+  background-color: #00bb5186;
+}
 .last-row{
   width: 100%;
   display: flex;
@@ -95,6 +104,9 @@ font-size: 22px;
  font-size: 22px;
  cursor: pointer;
  border: none;
+}
+.digits:active{
+  background-color: #00bb5186;
 }
 .bx-chevron-left{
   font-size: 36px;
@@ -122,6 +134,7 @@ font-size: 22px;
  border-top-left-radius: 50px;
  border-bottom-left-radius: 50px;
  transition: all 0.4s ease;
+ cursor: pointer;
 }
 .add{
   width: 50%;
@@ -148,6 +161,9 @@ font-size: 22px;
   border: none;
 font-size: 22px;
   cursor: pointer;
+}
+.dig:active{
+  background-color:  #00bb5186;
 }
 .output{
   margin-top: 40px;
